@@ -1,0 +1,150 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    user-select: none;
+}
+
+header {
+    background-color: #007394;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+    justify-content: center;
+}
+#navimg{
+    width: 15%;
+    height: 20px;
+    background-size: 30%;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 4%;
+}
+#navimg2{
+    background-image: url(../gestiweb/Imagenes/logo.png);
+    width: 15%;
+    height: 100px;
+    background-size: 5em;
+    position: absolute;
+    background-position: center;
+    margin-top: -5em;
+    background-repeat: no-repeat;
+}
+#header2 {
+    background-color: #008A97;
+    color: #fff;
+    padding: 1.5em;
+}
+
+.select-container {
+    position: relative;
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: -2.5em;
+    margin-left: 13em;
+}
+
+nav2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20em; 
+}
+
+nav2 li {
+    display: inline;
+    margin-right: 10%;
+}
+
+nav a {
+    text-decoration:underline;
+    color: #fff;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+nav2 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#cuerpo{
+    width:100%;
+    height:51em;
+    background-color: #b8f0cc;
+    position: absolute ;
+}
+
+h2{
+    text-align: center;
+    font-size: 3em;
+    color: #333;
+}
+#caja{
+    margin-top: -1em;
+    position: absolute;
+    background-color: #008A97;
+    height: 30em;
+    width: 75%;
+    left: 50%;
+    translate: -50%;
+}
+
+.container {
+    display: flex;                /* Usamos flexbox para el contenedor */
+    justify-content: space-around; /* Distribuir espacio de manera uniforme */
+    align-items: flex-start;      /* Alinear enlaces al inicio para que el texto se sitúe debajo */
+    padding: 10px;
+    gap: 20px;                    /* Espacio entre enlaces */
+    flex-wrap: wrap;              /* Permitir que los enlaces se envuelvan en múltiples líneas si es necesario */
+}
+
+/* Aplicamos estilo a los enlaces */
+.responsive-link {
+    margin-top: 7em;
+    flex: 1 1 auto;               /* Permitir que los enlaces se expandan y contraigan */
+    min-width: 150px;             /* Ancho mínimo aumentado para que las imágenes sean más grandes */
+    max-width: 300px;             /* Ancho máximo aumentado para que las imágenes sean más grandes */
+    display: flex;                /* Usamos flexbox para los enlaces */
+    flex-direction: column;       /* Ordenar elementos verticalmente */
+    justify-content: center;      /* Centrar las imágenes horizontalmente */
+    align-items: center;          /* Centrar todo horizontalmente */
+    text-decoration: none;        /* Sin subrayado */
+}
+
+/* Aplicamos estilo a las imágenes */
+.responsive-link img {
+    width: 100%;                  /* La imagen ocupa el 100% del contenedor del enlace */
+    height: auto;                 /* Mantiene la proporción de la imagen */
+    border-radius: 5px;           /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición suave para el escalado */
+}
+
+/* Aplicamos estilo al texto debajo de las imágenes */
+.responsive-link span {
+    margin-top: 10px;             /* Espacio entre la imagen y el texto */
+    font-size: 2em;              /* Tamaño de fuente */
+    color: white;                  /* Color del texto */
+    text-align: center;           /* Centrar el texto */
+    text-decoration: underline;
+}
+
+/* Efecto de escala al pasar el mouse sobre el enlace */
+.responsive-link:hover img {
+    transform: scale(1.05);       /* Escala la imagen ligeramente */
+}
+
+
