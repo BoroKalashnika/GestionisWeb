@@ -22,7 +22,7 @@ header {
 }
 
 #navimg2 {
-    background-image: url(../gestiweb/Imagenes/logo.png);
+    background-image: url(Imagenes/logo.png);
     width: 15%;
     height: 100px;
     background-size: 5em;
@@ -42,7 +42,7 @@ header {
 #idiomas {
     position: absolute;
     top: 9em ;
-    right: 20px; /* Ajusta el valor según sea necesario */
+    right: 20px; 
     padding: 10px;
     background-color: #f1f1f1;
     border: 1px solid #ddd;
@@ -51,13 +51,11 @@ header {
     cursor: pointer;
 }
 
-/* Media query para dispositivos de pantalla más pequeña */
 @media screen and (max-width: 768px) {
-    /* Ajustamos la posición del select para dispositivos pequeños */
     #idiomas {
         position: relative;
-        margin-top: 10px; /* Puedes ajustar el valor según sea necesario */
-        margin-bottom: 10px; /* Puedes ajustar el valor según sea necesario */
+        margin-top: 10px;
+        margin-bottom: 10px; 
         right: auto;
     }
 }
@@ -268,10 +266,10 @@ div#generaltext1 {
     position: fixed; 
     bottom: 0.5em;
     right: 0.75em;
-    z-index: 9999; /* nos asegura que estara encima de todos los elementos */
+    z-index: 9999; 
     font-size: 3.5em;
     color: #fff;
-    background-image: url(../gestiweb/Imagenes/up.png);
+    background-image: url(Imagenes/up.png);
     background-size: 100%;
     padding: 0.5em;
     border-radius: 10px;

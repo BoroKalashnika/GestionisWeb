@@ -21,7 +21,7 @@ header {
     margin-left: 4%;
 }
 #navimg2{
-    background-image: url(../gestiweb/Imagenes/logo.png);
+    background-image: url(Imagenes/logo.png);
     width: 15%;
     height: 100px;
     background-size: 5em;
@@ -104,47 +104,43 @@ h2{
 }
 
 .container {
-    display: flex;                /* Usamos flexbox para el contenedor */
-    justify-content: space-around; /* Distribuir espacio de manera uniforme */
-    align-items: flex-start;      /* Alinear enlaces al inicio para que el texto se sitúe debajo */
+    display: flex;                
+    justify-content: space-around; 
+    align-items: flex-start;     
     padding: 10px;
-    gap: 20px;                    /* Espacio entre enlaces */
-    flex-wrap: wrap;              /* Permitir que los enlaces se envuelvan en múltiples líneas si es necesario */
+    gap: 20px;                
+    flex-wrap: wrap;             
 }
 
-/* Aplicamos estilo a los enlaces */
 .responsive-link {
     margin-top: 7em;
-    flex: 1 1 auto;               /* Permitir que los enlaces se expandan y contraigan */
-    min-width: 150px;             /* Ancho mínimo aumentado para que las imágenes sean más grandes */
-    max-width: 300px;             /* Ancho máximo aumentado para que las imágenes sean más grandes */
-    display: flex;                /* Usamos flexbox para los enlaces */
-    flex-direction: column;       /* Ordenar elementos verticalmente */
-    justify-content: center;      /* Centrar las imágenes horizontalmente */
-    align-items: center;          /* Centrar todo horizontalmente */
-    text-decoration: none;        /* Sin subrayado */
+    flex: 1 1 auto; 
+    min-width: 150px;
+    max-width: 300px;
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    text-decoration: none;  
 }
 
-/* Aplicamos estilo a las imágenes */
 .responsive-link img {
-    width: 100%;                  /* La imagen ocupa el 100% del contenedor del enlace */
-    height: auto;                 /* Mantiene la proporción de la imagen */
-    border-radius: 5px;           /* Bordes redondeados */
-    transition: transform 0.3s ease; /* Transición suave para el escalado */
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
 }
 
-/* Aplicamos estilo al texto debajo de las imágenes */
 .responsive-link span {
-    margin-top: 10px;             /* Espacio entre la imagen y el texto */
-    font-size: 2em;              /* Tamaño de fuente */
-    color: white;                  /* Color del texto */
-    text-align: center;           /* Centrar el texto */
+    margin-top: 10px;
+    font-size: 2em;              
+    color: white;               
+    text-align: center;          
     text-decoration: underline;
 }
 
-/* Efecto de escala al pasar el mouse sobre el enlace */
 .responsive-link:hover img {
-    transform: scale(1.05);       /* Escala la imagen ligeramente */
+    transform: scale(1.05);       
 }
 
 
